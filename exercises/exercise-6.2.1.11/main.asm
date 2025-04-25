@@ -1,3 +1,4 @@
+; exercise 6.2.1.11
 
 .386
 .model flat, stdcall
@@ -6,13 +7,13 @@
 ExitProcess PROTO, dwExitCode:DWORD
 
 .data
-myList DWORD 2, 3, 5, 8
+favoriteColor BYTE "Blue", 0  ; null-terminated string with favorite color "Blue"
 
 .code
 main PROC
-  mov eax, 7
-  add eax, 8
-  INVOKE ExitProcess, eax
+  lea edx, favoriteColor   ; load the address of "Blue" into EDX
+
+  INVOKE ExitProcess, 0
 main ENDP
 
-END main        ;specify the program's entry point
+END main
