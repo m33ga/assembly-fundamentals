@@ -1,0 +1,64 @@
+Microsoft (R) Macro Assembler Version 14.43.34810.0	    04/25/25 18:44:17
+D:\univer\sem4\CA\lab_6\assembly\assembly-fundamentals\exercises\exercise-6.2.1.5\main.asm  Page 1 - 1
+
+
+				; exercise 6.2.1.5
+
+				.386
+				.model flat, stdcall
+				.stack 4096
+
+				ExitProcess PROTO, dwExitCode:DWORD
+
+ 00000000			.code
+ 00000000			main PROC
+ 00000000  B8 00000000		    mov eax, 0     ; Clear EAX
+ 00000005  83 C0 05		    add eax, 5     ; Instruction 1: add 5 to EAX
+
+ 00000008  BA 00000000		    mov edx, 0     ; Clear EDX
+ 0000000D  83 C2 05		    add edx, 5     ; Instruction 2: add 5 to EDX
+
+				    INVOKE ExitProcess, 0
+ 00000017			main ENDP
+
+				END main
+Microsoft (R) Macro Assembler Version 14.43.34810.0	    04/25/25 18:44:17
+D:\univer\sem4\CA\lab_6\assembly\assembly-fundamentals\exercises\exercise-6.2.1.5\main.asm  Symbols 2 - 1
+
+
+
+
+Segments and Groups:
+
+                N a m e                 Size     Length   Align   Combine Class
+
+FLAT . . . . . . . . . . . . . .	GROUP
+STACK  . . . . . . . . . . . . .	32 Bit	 00001000 DWord	  Stack	  'STACK'	 
+_DATA  . . . . . . . . . . . . .	32 Bit	 00000000 DWord	  Public  'DATA'	
+_TEXT  . . . . . . . . . . . . .	32 Bit	 00000017 DWord	  Public  'CODE'	
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+ExitProcess  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+main . . . . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 00000017 Public STDCALL
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+@CodeSize  . . . . . . . . . . .	Number	 00000000h   
+@DataSize  . . . . . . . . . . .	Number	 00000000h   
+@Interface . . . . . . . . . . .	Number	 00000003h   
+@Model . . . . . . . . . . . . .	Number	 00000007h   
+@code  . . . . . . . . . . . . .	Text   	 _TEXT
+@data  . . . . . . . . . . . . .	Text   	 FLAT
+@fardata?  . . . . . . . . . . .	Text   	 FLAT
+@fardata . . . . . . . . . . . .	Text   	 FLAT
+@stack . . . . . . . . . . . . .	Text   	 FLAT
+
+	   0 Warnings
+	   0 Errors
