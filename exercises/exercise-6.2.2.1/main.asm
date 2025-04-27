@@ -1,4 +1,8 @@
 ; exercise 6.2.2.1
+; Using the AddTwo program as a reference, write a program that calculates
+; the following expression, using registers: A = (A + B) - (C + D). Assign integer values to
+; the EAX, EBX, ECX, and EDX registers.
+
 
 .386
 .model flat,stdcall

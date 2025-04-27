@@ -1,3 +1,7 @@
+; exercise 6.2.3.3
+; Write a program that defines symbolic names for several string literals (characters
+; between quotes). Use each symbolic name in a variable definition.
+
 .386
 .model flat, stdcall
 .stack 4096

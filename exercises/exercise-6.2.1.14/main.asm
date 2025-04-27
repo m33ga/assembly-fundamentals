@@ -1,4 +1,6 @@
 ; exercise 6.2.1.14
+; Declare an array of 20 unsigned bytes named bArray and initialize all elements to zero.
+
 
 .386
 .model flat, stdcall

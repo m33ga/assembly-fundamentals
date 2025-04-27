@@ -1,3 +1,7 @@
+; exercise 6.2.3.1
+; Write a program that defines symbolic constants for all seven days of the week. Create
+; an array variable that uses the symbols as initializers.
+
 .386
 .model flat, stdcall
 .stack 4096

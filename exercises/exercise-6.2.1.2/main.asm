@@ -1,4 +1,6 @@
 ; exercise 6.2.1.2
+; Find out, by trial and error, if a program can have multiple code and data segments.
+
 
 .386
 .model flat, stdcall

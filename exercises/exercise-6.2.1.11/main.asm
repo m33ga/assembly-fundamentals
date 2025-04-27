@@ -1,4 +1,7 @@
 ; exercise 6.2.1.11
+; Declare a string variable containing the name of your favorite color. Initialize it as
+; a nullterminated string.
+
 
 .386
 .model flat, stdcall
